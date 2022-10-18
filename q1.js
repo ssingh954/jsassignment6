@@ -7,7 +7,6 @@ class Rectangle {
   this.width = width;
   }
 
-  // method
   get area() {
     return this.length * this.width;
   }
@@ -17,4 +16,13 @@ class Rectangle {
 let obj= new Rectangle(7,2);
 console.log('Area of Rectangle: '+obj.area);
 
-  
+/////////////////////////////////////////////////////////////////////
+
+class Square extends Rectangle {
+  constructor(size) {
+    super(size, size);
+  }
+}
+
+let sq1 = new Square(5);
+console.log('Area of Square: '+sq1.area);
